@@ -1,0 +1,22 @@
+server:
+   port: 8082
+   servlet:
+      context-path: /v1/card
+      
+spring:
+  application:
+    name: bms-card-service
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/bms
+    username: root
+    password: root
+    
+  jpa:
+    hibernate:
+         ddl-auto: update
+    show-sql: true
+    properties:
+         hibernate:
+              dialect: org.hibernate.dialect.MySQL8Dialect
